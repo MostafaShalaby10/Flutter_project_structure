@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:project_structure/components/themes/dark_theme.dart';
-import 'package:project_structure/components/themes/ligh_theme.dart';
+import 'package:project_structure/core/components/themes/dark_theme.dart';
+import 'package:project_structure/core/components/themes/ligh_theme.dart';
+import 'package:project_structure/features/home/view/home_view.dart';
 
 import 'core/utils/service_locator.dart';
 import 'core/utils/shared_prefrences.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         themeMode: ThemeMode.system,
         home: child,
       ),
-      child: , // Start widget
+      child: HomeView(), // Start widget
     );
   }
 }
